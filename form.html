@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <h1>Registrate en HTML AVANZADO.</h1>
+    <h2>A continuación...</h2>
+    <form action="">
+      <label for="usuario">Usuario:</label>
+      <input
+        type="text"
+        name="usuario"
+        id="usuario"
+        placeholder="Tu nombre de usuario"
+        autocomplete="off"
+        pattern="^[A-Za-z]+$"
+        title="El campo solo acepta letras."
+        required
+      />
+      <label for="mail">Correo electrónico</label>
+      <input
+        type="mail"
+        name="mail"
+        id="mail"
+        placeholder="Tu Email"
+        required
+      />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Tu contraseña"
+        autocomplete="off"
+        required
+      />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <a href="index.html">Página principal.</a>
+  </body>
+</html>
+<!--El atributo de ACTION en el elemento FORM indica donde se enviará el formulario. La etiqueta NAME le da un nombre al formulario. el atributo FOR del elemento LABEL se enlaza junto a un ID, PLACEHOLDER escribirá dentro del input-->

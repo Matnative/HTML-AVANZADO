@@ -1,0 +1,29 @@
+* {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgba(140, 120, 230, 0.5);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+h3 {
+  color: red;
+}
+
+a,
+input {
+  display: block;
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
+}

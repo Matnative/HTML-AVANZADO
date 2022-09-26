@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--Gracias a la etiqueta DOCTYPE y el atributo html le damos a entender al navegador que estamos haciendo uso de HTML5, la versión más avanzada al día de hoy.-->
+<html lang="es-AR">
+  <!-- El atributo LANG indica a que lenguaje esta dirigido el documento HTML.-->
+  <head>
+    <!--Se relaciona en general al SEO de las páginas, con el posicionamiento en los motores de búsqueda. La etiqueta HEAD se considera METAINFORMACIÓN, es decir, es información que habla de la página pero los usuarios no lo vemos, está información es más utilizada por los algoritmos para posicionarnos en los buscadores. -->
+    <meta property="og:title" content="HTML AVANZADO" />
+    <meta
+      property="og:description"
+      content="Estamos aprendiendo a usar HTML de manera avanzada."
+    />
+    <meta property="og:image" content="https" />
+    <meta charset="UTF-8" />
+    <!--La etiqueta META incluira los metadatos y los interpretará en nuestro documento HTML.-->
+    <!--El atributo CHARSET es el juego de caracteres con el que está codificada nuestra página y con el indicaremos que caracteres adaptará nuestro sitio, con el valor "UTF-8" le indicamos que aceptará caracteres a nivel global.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--El atributo NAME le da nombre a la metaetiqueta, y CONTENT el contenido al cual hace referencia. El valor "viewport" en el atributo NAME, es la zona visible del navegador donde se renderiza el contenido HTML. El valor "width=device-width" de el atributo CONTENT indicará que el ancho de la página se adaptará al ancho del dispositivo, y el valor "initial-scale=1.0" le indica a que escalá se comenzará a visualizar el contenido, en este caso 1.0, que sería el 100%. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Y con esta indicamos que Internet Explorer tendrá la misma configuración que Edge, pero no es estandar, se puede quitar.-->
+    <title>HTML AVANZADO</title>
+    <!--Este será el título de nuestro documento HTML, se mostrará en el nombre de pestaña y en el título de la página en el buscador, la misma no puede superar los 65 caracteres. Tiene un fuerte poder semántico.-->
+    <!--Con las etiquetas TITLE y META estamos contribuyendo al posicionamiento de nuestra página en los motores de búsqueda, estamos dominando SEO "SEARCH ENGINE OPTIMIZATION" "OPTIMIZACIÓN EN MOTOR DE BÚSQUEDA" estas etiquetas tienen un fuerte poder a la hora de posicionar nuestro contenido. Cada documento HTML debe ser explicado tal y como es, ya que es un error que todos los documentos HTML de nuestra web tengan el mismo título o metadescripción. -->
+    <meta
+      name="description"
+      content="Estamos aprendiendo a usar HTML de manera avanzada."
+    />
+    <!--El atributo NAME le da nombre a la metaetiqueta y CONTENT el contenido al cual hace referencia. El valor "description" hará referencia a que estamos escribiendo una descripción, lo que el usuario verá como información en el buscador web. En CONTENT escribiremos toda la información de que contenido se encontrará en el documento html, con un rango máximo de 165 caracteres. -->
+    <meta name="theme-color" content="#ff4000" />
+    <!--Decoramos,(cambiamos color), a nuestra barra de dirección móvil.-->
+    <link rel="canonical" href="index.html" />
+    <!--Hace referencia a el contenido canónico del documento, con HREF le estás indicando cual es la URL canónica, la que tiene esa vigencia.-->
+    <link rel="stylesheet" href="assets/style.css" />
+    <!--La etiqueta LINK enlaza diferentes aplicaciones dentro de tu documento HTML, en este caso CSS3. "STYLESHEET" Hoja de estilo.-->
+    <link rel="icon" href="img/html-svgrepo-com.svg" />
+    <link rel="apple-touch-icon" href="img/html-svgrepo-com.svg" />
+    <!--Cambiamos el ícono de nuestro sitio web.-->
+    <script defer src="assets/codigo.js"></script>
+    <!--La etiqueta SCRIPT enlaza JAVASCRIPT a tu documento HTML.-->
+  </head>
+  <body>
+    <!--La etiqueta BODY engloba todo el contenido Front-End visual de la página.-->
+    <h3 id="recomendación">Recomiendo leer los comentarios en el documento.</h3>
+    <div>
+      <h4>Temario:</h4>
+      <ul>
+        <li><a href="index.html#inicio">Niveles semánticos de H1-6.</a></li>
+        <li>
+          <a href="index.html#parrafo-span">Párrafo y Span (Separación).</a>
+        </li>
+        <li>
+          <a href="index.html#baja-seman">In-line tags, de baja semántica.</a>
+        </li>
+        <li><a href="index.html#sub-sup">Superíndice y Subíndice</a></li>
+        <li>
+          <a href="index.html#impor-enfa">In-line tags, de fuerte semántica</a>
+        </li>
+        <li><a href="index.html#cite-bloq">Cita con Blockquote</a></li>
+        <li><a href="index.html#listas">3 tipos de Listas.</a></li>
+        <li>
+          <a href="index.html#saltos-line">Diferentes saltos de línea.</a>
+        </li>
+        <li><a href="index.html#formateo">Tipo de formateo.</a></li>
+        <li><a href="index.html#semantic-tem">Estructura semántica.</a></li>
+        <li><a href="#bloq-line">Etiquetas de bloque y in-line.</a></li>
+        <li><a href="index.html#CSS3">CSS</a></li>
+        <li><a href="index.html#JSCRIPT">Javascript</a></li>
+        <li><a href="index.html#images">Imagenes</a></li>
+        <li><a href="index.html#tablas">Tablas</a></li>
+        <li><a href="index.html#enlaces">Enlaces</a></li>
+        <li><a href="index.html#elementos-inter">Elementos interactivos</a></li>
+        <li><a href="index.html#audi-vide">Audio y video.</a></li>
+        <li><a href="index.html#iframes">Iframes</a></li>
+        <li><a href="index.html#formularios">Formularios</a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </div>
+    <h1 id="inicio">Niveles semánticos de H1-6.</h1>
+    <a href="index.html#recomendación">Inicio.</a>
+    <h2>HTML</h2>
+    <h5>Hola</h5>
+    <h6>HTML</h6>
+    <!--Las etiquetas H1-6 son escalas de titulares a nivel semántico, la primera es la más grande visualmente y va en decaída hacia la ultima que es H6, puede haber solo un H1 en un documento, el resto se pueden usar en variedad, tienen un fuerte poder semántico. H1 es la más fuerte, le sigue H2, etc...-->
+    <hr />
+    <h2 id="parrafo-span">
+      Explicamos como crear un parrafo con una separación y estilo CSS3.
+    </h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <p>
+      Hola qué tal
+      <span style="background-color: rgba(150, 120, 120, 0.5)">soy Matías</span>
+    </p>
+    <!--La etiqueta P hace referencia a un párrafo, y la etiqueta SPAN es una separación en el contenido. El atributo STYLE permite escribir líneas CSS3 en tu documento HTML, no es recomendado ya que es mejor práctica enlazar CSS3 dentro de la etiqueta HEAD.-->
+    <hr />
+    <h2 id="baja-seman">
+      Enseñamos a usar etiquetas de baja semántica pero de diseño HTML (B, I, U,
+      SMALL).
+    </h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
+      culpa. <b>Nulla </b>rem perferendis <i>voluptates? </i><u> Non,</u>
+      <small>0 Semántica</small>
+    </p>
+    <!--la etiqueta B pone el contenido en negrita (bold), la I pone el contenido en itálica (cursiva) y el U pone el contenido subrayado, es mejor práctica hacerlo en CSS, porque estos no tienen fuerte poder semántico, la etiqueta small no cumple tampoco con fuerte poder semántico, es más, te pone el texto más chiquito.-->
+    <hr />
+    <h2 id="sub-sup">Enseñamos a hacer un SUPERÍNDICE y un SUBÍNDICE.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <p>e = m<sup>2</sup></p>
+    <p>agua = H<sub>2</sub>O</p>
+    <!--Tenemos un SUPERÍNDICE y un SUBÍNDICE, con ellos digitamos 2 fórmulas.-->
+    <hr />
+    <h2 id="impor-enfa">
+      Enseñamos 2 etiquetas semánticas, una de importancia y otra de énfasis en
+      el texto.
+    </h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <p>
+      Lorem ipsum <strong>dolor </strong>sit amet consectetur
+      <em>adipisicing elit.?</em>
+    </p>
+    <!--La etiqueta STRONG pone el texto en negrita pero con un fuerte poder semántico. El mismo caso ocurre con EM, en este caso le da importancia en diseño itálico(cursiva).-->
+    <hr />
+    <h2 id="cite-bloq">
+      Enseñamos a crear una cita, una referencia con comentario y autor.
+    </h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <blockquote>
+      'Soy un perro, porque muevo la cola al que me da algo, ladro al que no me
+      dá y muerdo a los malvados.'
+    </blockquote>
+    <cite>Diógenes de Sinope.</cite>
+    <!--La etiqueta BLOCKQUOTE nos permite crear una cita, hacer referencia a algo que alguien más escribió. Para acompañar usamos la etiqueta CITE.-->
+    <hr />
+    <h2 id="listas">
+      Enseñamos a crear una lista desordenada y una ordenada, con un enlace de
+      direccionamiento.
+    </h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <ul>
+      <li>Hola</li>
+      <li>Soy</li>
+      <li><a href="#">Mati</a></li>
+    </ul>
+    <ol>
+      <li>Hola</li>
+      <li>Soy</li>
+      <li><a href="#">Mati</a></li>
+    </ol>
+    <!--La etiqueta UL, hace referencia a una lista desordenada, la cual podrá tener diferentes signos.Y la etiqueta OL, hace referencia a una lista ordenada, enumerada en orden, a la misma se le puede cambiar el orden o la enumeración. Estas están acompañadas de la etiqueta A, también llamada "anchor", que enlaza una URL a la quieras dirigir al usuario, una sección dentro de la página, o incluso una dirección de mail.-->
+    <hr />
+    <h2>Trucos para listas.</h2>
+    <h4>Comenzar desde un número específico.</h4>
+    <ol start="3">
+      <li>Rojo</li>
+      <li>Verde</li>
+      <li>Azúl</li>
+    </ol>
+    <!--Ésta lista ordenada está comenzando desde el número 3.-->
+    <h4>Que la lista vaya en reversa.</h4>
+    <ol reversed>
+      <li>Rojo</li>
+      <li>Verde</li>
+      <li>Azúl</li>
+    </ol>
+    <!--Ésta lista va en reversa.-->
+    <h4>Que la lista sea un números romanos u otros.</h4>
+    <ol type="I">
+      <li>Rojo</li>
+      <li>Verde</li>
+      <li>Azúl</li>
+    </ol>
+    <!--La lista cambió su formato.-->
+    <h4>En el caso de las desordenadas también podemos.</h4>
+    <ul type="circle">
+      <li>Rojo</li>
+      <li>Verde</li>
+      <li>Azúl</li>
+    </ul>
+    <!--Le cambiamos el signo por circle, disc, square.-->
+    <hr />
+    <h2>Listas de definición.</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascade Style Sheet</dd>
+      <dt>JS</dt>
+      <dd>JavaScript</dd>
+    </dl>
+    <!--DL: DEFINITION LIST, DT: DEFINITION TERM, DD: DEFINITION DATA. No son tan utilizadas.-->
+    <hr />
+    <h2 id="saltos-line">Enseñamos a hacer diferentes saltos de línea.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+      Exercitationem repellat deleniti dolor nesciunt iusto inventore tempore
+      delectus non aliquam. Iste pariatur vel quos, dolore suscipit possimus
+      illum unde tempore doloribus?
+    </p>
+    <!--Las etiquetas BR y HR generan saltos de línea, HR genera un salto con una línea literal, y BR solo salta de línea. HR se usa más para saltar de contenido.-->
+    <hr />
+    <h2 id="formateo">Tipo de formateo.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <pre>
+      Tareas por realizar
+        -HTML:
+          -Terminar el curso.
+          -Ser avanzado.
+    </pre>
+    <!--Con la etiqueta PRE, el texto que coloquemos respetara los saltos de línea dentro del párrafo. Se creara un formateo de texto.-->
+    <hr />
+    <h2>Formato de código</h2>
+    <code>Aquí ponemos el código.</code>
+    <!--Formamos una box de código.-->
+    <hr />
+    <h2 id="semantic-tem">Etiquetas semánticas estructurales.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <div>
+      El DIV antes se usaban las div's para separar diferentes secciones, ya que
+      engloba un contenido de bloque genérico, pero aunque esté aquí no
+      representa ningun poder a nivel semántico.
+    </div>
+    <br />
+    <header>El HEADER actúa como cabecera de nuestro sitio web.</header>
+    <br />
+    <nav>
+      NAV hace referencia a una navegación, se suele usar para para agrupar
+      links.
+    </nav>
+    <br />
+    <main>
+      MAIN va a definir la sección principal del documento, sólo puede existir
+      una por documento.
+    </main>
+    <br />
+    <footer>
+      El FOOTER haría referencia al pié de página de un sitio web o de una
+      sección.
+    </footer>
+    <br />
+    <article>
+      ARTICLE nos sirve para representar una sección de autocontenido, significa
+      que por sí sola explica todo el contenido independientemente a la
+      interface del sitio.
+    </article>
+    <br />
+    <aside>
+      ASIDE va a dirigirse a un contenido secundario o complementario, típico
+      "Te puede interesar..." o diferentes secciones relacionadas o no al
+      contenido principal.
+    </aside>
+    <br />
+    <section>La SECTION representa una sección de contenido genérico</section>
+    <br />
+    <address>
+      ADDRESS representa una dirección física o dirección de contacto.
+    </address>
+    <!--Cabe recalcar que la única etiqueta que sólo puede utilizarse 1 vez por documento html es MAIN, el resto puede usarse varias veces, y todas aportan gran valor semántico estructural, menos las DIV.-->
+    <hr />
+    <h2 id="bloq-line">Etiquetas de bloque y etiquetas de línea.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <div style="background-color: blue">
+      La etiqueta de bloque por excelencia es la DIV. Una etiqueta de bloque
+      ocupa todo el espacio de la línea y es independiente a cualquier otro
+      bloque.
+    </div>
+    <br />
+    <span style="background-color: green">
+      Y la etiqueta de línea por excelencia es la SPAN. Una etiqueta de línea
+      solo ocupa el espacio necesario que abarca su contenido.</span
+    >
+    <span>Otro span</span>
+    <!--Todas las etiquetas de semántica estructural son de ambito de bloque, incluso los párrafos... Como in-line podemos englobar las que diferencian un texto por importancia semántica, como el enfasis, o también las de bold, italic, small, strong, y subrayado. Incluso las imagenes, los videos, los audios, etc...-->
+    <hr />
+    <h2 id="CSS3">
+      3 maneras de aplicar hojas de estilo en cascada (CSS3/CASCADE STYLE
+      SHEET).
+    </h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <ul>
+      <li>Crear una etiqueta LINK en el head enlazado a un archivo CSS3.</li>
+      <li>
+        Crear en el head una etiqueta STYLE, se podrá usar como hoja de estilo
+        en cascada.
+      </li>
+      <li>
+        Y la ultima es aplicar en cada elemento el atributo STYLE y darle
+        estilo.
+      </li>
+    </ul>
+    <!--Lo más recomendable es enlazar un archivo de hoja de estilos en cascada.-->
+    <hr />
+    <h2 id="JSCRIPT">Scripts en HTML de 2 maneras.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <p>De una manera se usa con la etiqueta script al final de nuestro BODY.</p>
+    <p>
+      La manera más convencional es enlazar un archivo JAVASCRIPT en el HEAD con
+      el atributo "source" enlazando el archivo ".js" con el atributo adicional
+      "defer" para que el archivo JS se ejecute a la par del HTML.
+    </p>
+    <!--La mejor manera es enlazar un archivo JS a tu documento HTML.-->
+    <hr />
+    <h2 id="images">Agreguemos una imágen.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <img src="img/gatito.jpg" alt="Gatito Ponido" />
+    <img src="img/html-svgrepo-com.svg" alt="Logo HTML" />
+    <!--Se puede agregar una imágen desde la carpeta o desde una URL. Se le puede cambiar las medidas pero es mejor hacerlo con CSS3. Se pueden agregar SVG por dirección url, carpeta, o mismo código.-->
+    <hr />
+    <h2>Figuras</h2>
+    <figure>
+      <img src="img/matías.jpg" alt="Cara de Matías" />
+      <figcaption>Éste soy yo...</figcaption>
+    </figure>
+    <!--FIGURE define un único elemento, por lo general una imagen. FIGCAPTION, da una descripción de la FIGURE. Es opcional el uso de la descripción.-->
+    <hr />
+    <h2 id="tablas">Tablas.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <table>
+      <!--TABLE: Inicio de la tabla-->
+      <tr>
+        <td>Nombre</td>
+        <td>Constelación</td>
+        <td>Raza</td>
+        <!--TD: TABLE DATA: Define un dato dentro de la fila.-->
+      </tr>
+      <!--TR: Table Road, define una fila.-->
+      <tr>
+        <td>Matías</td>
+        <td>Sagitario</td>
+        <td>Humano</td>
+      </tr>
+    </table>
+    <!--Esto fue una TABLA SIMPLE.-->
+    <h2>Un poco más elaborada.</h2>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Campeonato de la liga regular.</th>
+          <!--TH: TABLE HEAD, INDICA QUE LA CASILLA SE ESCRIBIRÁ EN NEGRITA, DÁNDOLE VIGENCIA AL TEXTO.-->
+        </tr>
+        <tr>
+          <th>Equipo</th>
+          <th>Localización</th>
+          <th>Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>River</td>
+          <td>Nuñez</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Boca</td>
+          <td>Puerto Madero</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>Racing</td>
+          <td>Avellaneda</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Totál:</th>
+          <td>125</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!--Tenemos una tabla más compleja. COLSPAN es un atributo que permite abarcar cierta cantidad de columnas pre-seleccionada por el usuario en horitzontal (x). ROWSPAN ocupará 2 filas en vertical. (y).-->
+    <hr />
+    <h2 id="enlaces">Enlaces</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <a href="form.html">Registro</a>
+    <a target="_blank" href="contact.html">Contácto</a>
+    <a href="#semantic-tem">Semántica estructural.</a>
+    <a
+      target="_blank"
+      rel="nofollow"
+      href="https://www.youtube.com/watch?v=-oK6zL01fNM&t=867s"
+      >Aprendé HTML con JonMircha.</a
+    >
+    <a target="_blank" rel="nofollow" href="https://htmlreference.io/"
+      ><img width="40px" src="img/html-svgrepo-com.svg" alt="Signo HTML5"
+    /></a>
+    <a href="mailto:matias1vizcarra@gmail.com">Mail</a>
+    <a
+      target="_blank"
+      href="https://api.whatsapp.com/send?phone=541159937387&&text=Hola"
+      >Whatsapp</a
+    >
+    <!--Los enlaces pueden estar dirigidos al mismo directorio u otros, enlazando su dirección correcta. También se pueden enlazar links de páginas externas, y determinadas secciones del mismo documento. El atributo TARGET, con el valor "_blank" indican que el enlace se abrirá en nueva pestaña. el atributo REL con el valor "nofollow" le dice a las "arañas" a los bots y algoritmos que chequean nuestro documento para posicionarlo, les indica que no debe seguir ese link porque es independiente a la página. Cada APP tiene su propia dirección para redirigir un mensaje.-->
+    <hr />
+    <h2 id="elementos-inter">Elementos interactivos.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <button>Esto es un botón</button>
+    <!--Los botones deberían manejarse en JS.-->
+    <details>
+      <summary>Título del acordeón</summary>
+      <article>
+        <h3>Contenido del acordeón</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, dolorum. Accusantium voluptate neque beatae
+          reprehenderit nesciunt labore temporibus ea dicta! Accusantium
+          voluptatum dolores voluptas cumque exercitationem optio commodi, magni
+          natus.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, dolorum. Accusantium voluptate neque beatae
+          reprehenderit nesciunt labore temporibus ea dicta! Accusantium
+          voluptatum dolores voluptas cumque exercitationem optio commodi, magni
+          natus.
+        </p>
+        <img src="img/gatito.jpg" alt="Gatitooo" />
+      </article>
+    </details>
+    <details open>
+      <summary>Título del acordeón</summary>
+      <article>
+        <h3>Contenido del acordeón</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, dolorum. Accusantium voluptate neque beatae
+          reprehenderit nesciunt labore temporibus ea dicta! Accusantium
+          voluptatum dolores voluptas cumque exercitationem optio commodi, magni
+          natus.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, dolorum. Accusantium voluptate neque beatae
+          reprehenderit nesciunt labore temporibus ea dicta! Accusantium
+          voluptatum dolores voluptas cumque exercitationem optio commodi, magni
+          natus.
+        </p>
+        <img src="img/gatito.jpg" alt="Gatitooo" />
+      </article>
+    </details>
+    <!--El uso de acordeones con DETAILS, dento llevará un título con la etiqueta SUMMARY dentro contendrá lo que uno quiera, en este caso un ARTICLE, el atributo OPEN carga un acordeón abierto al recargar la página.-->
+    <hr />
+    <h2 id="audi-vide">Audio y video.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <div>
+      <h6>Audio:</h6>
+      <audio src="media/audiogta.mp3" controls preload></audio>
+      <h6>Video:</h6>
+      <video src="media/videogta.mp4" controls preload></video>
+      <!--El atributo poster nos permitirá colocar una miniatura.-->
+    </div>
+    <!--A ambos reproductores se les puede agregar el atributo "AUTOPLAY" que reproducirá el mismo al refrescar la página. No funcionaría en dispositivos móviles, y en pocos navegadores... El atributo "LOOP" repetirá el reproductor... y el atributo "MUTED" comenzará el video silenciado, otro es "PRELOAD" descargará el archivo antes de que el usuario interaccione con el...-->
+    <hr />
+    <h2 id="iframes">Iframes</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <iframe src="form.html" frameborder="1"></iframe>
+    <iframe src="assets/frente-nuevo.pdf" frameborder="1"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6569.699330781259!2d-58.64304778563311!3d-34.58267029500277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9521c6d4211%3A0x5d2a831dff1751fa!2sClub%20Deportivo%20Defensores%20de%20Hurlingham!5e0!3m2!1ses-419!2sar!4v1664156253562!5m2!1ses-419!2sar"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!--IFRAME puede capturar en una box cualquier otro documento. el atributo "FRAMEBORDER" le da un borde a la caja. Podemos indexar Maps y Youtube entre muchos otros más... Es muy versátil. Se recomiendan pocas en un documento, ya que tardan en cargar.-->
+    <hr />
+    <h2 id="formularios">Elementos de formularios.</h2>
+    <a href="index.html#recomendación">Inicio.</a>
+    <input type="checkbox" />
+    <input type="email" required />
+    <input type="number" />
+    <input type="password" required />
+    <input type="radio" />
+    <input type="date" />
+    <input type="color" />
+    <input type="button" value="Botón" />
+    <input type="submit" />
+    <input type="file" />
+    <input type="file" multiple />
+    <input type="hidden" name="idioma" value="es" />
+    <input type="tel" />
+    <input type="search" />
+    <input type="text" value="MatíasVizcarra" readonly disabled />
+    <input type="text" placeholder="Escribe tu nombre." />
+    <!--Diferentes tipos de inputs... Se explican solos.-->
+    <h4>Area de texto.</h4>
+    <textarea cols="30" rows="10"></textarea>
+    <select name="" id="">
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JavaScript</option>
+      <option value="">PHP</option>
+      <option value="">Python</option>
+    </select>
+    <select multiple name="" id="">
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JavaScript</option>
+      <option value="">PHP</option>
+      <option value="">Python</option>
+    </select>
+    <!--Con SELECT podemos hacer un menú con diferentes opciones para elegir, con el atributo MULTIPLE podemos elegir entre todas las opciones, varias...-->
+    <hr />
+    <h2>Formulario</h2>
+    <a href="form.html">Registro</a>
+    <hr />
+    <h2>Select, Radios, CheckBox</h2>
+    <form action="">
+      <label for="idioma">Elige tu idioma</label>
+      <select name="idioma" id="idioma" required>
+        <option value="">Elige una opción...</option>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <!--SELECTED: selección por defecto.-->
+        <option value="pt">Portugués</option>
+        <option value="al">Alemán</option>
+        <option value="it">Italiano</option>
+      </select>
+      <p>Elige tu lenguaje de programación favorito.</p>
+      <input type="radio" name="lenguaje" id="radio-js" value="js" required />
+      <label for="radio-js">JavaScript</label>
+      <input type="radio" name="lenguaje" id="radio-py" value="py" />
+      <label for="radio-py">Python</label>
+      <input type="radio" name="lenguaje" id="radio-php" value="php" />
+      <!--CHECKED: selección por defecto.-->
+      <label for="radio-php">PHP</label>
+      <p>Elige tus intereses.</p>
+      <label>
+        <input type="checkbox" name="intereses" value="deportes" />
+        Deportes
+        <input type="checkbox" name="intereses" value="finanzas" />
+        Finanzas
+        <input type="checkbox" name="intereses" value="salud" />
+        Salud
+        <input type="checkbox" name="intereses" value="politica" />
+        Política
+        <input type="checkbox" name="intereses" value="ecologia" />
+        Ecología
+      </label>
+      <!--Esta es una manera menos engorrosa de enumerar diferentes opciones.-->
+      <p>Aceptar términos y condiciones.</p>
+      <label>
+        <input type="checkbox" name="terminos" required />
+      </label>
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <!--
+      file:///C:/Users/matia/Estudio/HTML-AVANZADO/index.html?idioma=es&lenguaje=py&intereses=deportes&intereses=salud&intereses=ecologia#formularios
+
+      file:///C:/Users/matia/Estudio/HTML-AVANZADO/index.html?idioma=en&lenguaje=php&intereses=finanzas&intereses=politica&intereses=ecologia#formularios
+
+      file:///C:/Users/matia/Estudio/HTML-AVANZADO/index.html?idioma=en&lenguaje=php&intereses=finanzas&intereses=politica&terminos=on#formularios
+    -->
+    <!--Los radio se interpretan con ON-OFF-->
+    <hr />
+    <h2>DataAttributes</h2>
+    <!--HTML5 nos permité crearle un atributo cualquiera a una etiqueta...-->
+    <ul>
+      <!--Para comenzar a tratar la creación de un nuevo atributo utilizamos las siglas "data-"-->
+      <li data-id="1" data-name="summer">Verano</li>
+      <li data-id="2" data-name="autumn">Otoño</li>
+      <li data-id="3" data-name="winter">Invierno</li>
+      <li data-id="4" data-name="spring">Primavera</li>
+    </ul>
+    <hr />
+    <h2>Meta-Etiquetas para SEO (Search Engine Optimization)</h2>
+  </body>
+</html>
+<!--La etiqueta HTML da inicio y final a un documento de este tipo. HTML hace referencia a Hipertext Markup Language, Lenguaje de marcado de hipertexto. -->

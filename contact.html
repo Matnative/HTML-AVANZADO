@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contácto</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <a href="index.html">Inicio</a>
+    <h1>Contáctame aquí.</h1>
+    <h2>A continuación...</h2>
+    <form action="https://formsubmit.co/matyxdxdxd@gmail.com" method="POST">
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre..."
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre sólo acepta letras y espacios en blanco. "
+        required
+      />
+      <input
+        type="email"
+        name="correo"
+        placeholder="Escribe tu correo..."
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        title="Formato de correo inválido."
+        required
+      />
+      <textarea name="comentarios" cols="30" rows="10" required></textarea>
+      <input type="submit" />
+    </form>
+    <!--La etiqueta FORM con el atributo ACTION enviará información... ... Colocaremos el atributo PATTERN en el input, el cual indicará qué tipo de caracteres van a solicitarse.
+    A-Za-z: No incluye caracteres especiales.
+    ÑñÁáÉéÍíÓóÚúÜü: Incluye caracteres especiales.
+    \s: Incluye separación.
+    -->
+  </body>
+</html>
